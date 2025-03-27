@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-content{
+    background-color: azure;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+p{
+    font-size: 18px;
+}
+#social{
+    grid-column: 2/4;
+    background-color: hsl(256, 67%, 59%);
+    /* width: 300px; */
+    height: 150px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 5px;
+}
+.social-head{
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 30px;
+}
+.social-speed{
+    color: hsl(39, 100%, 71%);
+}
+.social-text{
+    margin-top: -2px;
+    font-size: 9px;
+    color: #ffffffdc;
+}
+#manage{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #ffffff;
+    /* width: 140px; */
+    height: 140px;
+    overflow: hidden;
+    padding: 9px 13px;
+    font-family: "DM sans", sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+}
+#maintain img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+#manage figure{
+    margin-left: -5px;
+}
+#maintain{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    line-height: 16px;
+    border-radius: 5px;
+    /* margin-top: -13px; */
+    height: 137px;
+    overflow: hidden;
+    padding: 9px 20px;
+    font-weight: 500;
+    background-color: hsl(39, 100%, 71%);
+}
+#manage p{
+    font-size: 15px;
+    background-color: #fff;
+}
+.maintain{
+    margin-bottom: -5px;
+    font-family: "MD sans", sans-serif;
+    font-weight: 500;
+}
+#maintain figure{
+    margin-top: 15px;
+    margin-left: -5px;
+}
+#schedule{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: hsl(254, 88%, 90%);
+    font-family: "DM serif", sans-serif;
+    padding: 14px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#schedule h1{
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 18px;
+}
+#schedule p{
+    font-size: 13px;
+}
+#grow{
+    grid-column: 3/5;
+    grid-row: 3/5;
+    height: 130px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;;
+    align-items: center;
+    background-color: hsl(256, 67%, 59%);
+}
+#grow p{
+    font-family: "DM sans", sans-serif;
+    color: #fff;
+}
+#audience{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-color: #fff;
+    height: 130px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "DM sans", sans-serif;
+}
+#audience .range{
+    text-align: start;
+    font-size: 30px;
+    font-weight: 500;
+}
+p.audience{
+    font-size: 10px;
+    margin-bottom: 16px;
+}
+#content{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: hsl(31, 66%, 96%);
+    height: 205px;
+    padding: 15px;
+    font-family: "DM sans", sans-serif;
+    border-radius: 5px;
+}
+#content p{
+    font-weight: thin;
+    letter-spacing: -1px;
+    line-height: 19px;
+    font-size: 17px;
+}
+.content-speed{
+    color: hsl(256, 67%, 59%);
+}
+#content img{
+    margin-top: 10px;
+}
+#AI{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-color: hsl(39, 100%, 71%);
+    margin-top: -110px;
+    padding: 15px;
+    font-family: "DM sans", sans-serif;
+    border-radius: 5px;
+}
+#AI p, #AI img{
+    margin: auto;
+    text-align: center;
+}
+.attribution{
+    text-align: center;
+}
+@media (max-width: 450px) {
+    .body-content{
+        display: block;
+        width: 90vw;
+    }
+    #social, #manage, #maintain, #schedule, #grow, #audience{
+        margin-bottom: 15px;
+    }
+    #social{
+        height: 130px;
+        font-size: 12px;
+    }
+    #social h1{
+        line-height: 20px;
+    }
+    #manage{
+        height: 100px;
+        line-height: 13px;
+    }
+    #manage p, #maintain p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    #maintain{
+        overflow: hidden;
+        line-height: 12px;
+    }
+    #maintain p{
+        margin-left: -15px;
+    }
+    #maintain img{
+        margin-left: -40px;
+    }
+    #schedule{
+        text-align: center;
+    }
+    #schedule h1{
+        padding: 13px 0;
+        font-weight: 600;
+    }
+    #schedule p{
+        text-align: center;
+        margin: auto;
+        width: 190px;
+    }
+    #grow{
+        display: block;
+        text-align: center;
+        padding: 20px;
+        height: 170px;
+    }
+    #grow p{
+        width: 120px;
+        font-size: 14px;
+        line-height: 12px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    #content{
+        text-align: start;
+        margin: auto;
+        height: 150px;
+    }
+    #content p{
+        width: 190px;
+        font-weight: 300;
+        word-spacing: 5px;
+    }
+    #AI{
+        margin-top: 20px;
+    }
+    #AI p{
+        width: 190px;
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+        padding-bottom: 10px;
+        line-height: 16px;
+    }
+}
