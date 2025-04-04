@@ -145,7 +145,7 @@ p.audience{
     border-radius: 5px;
 }
 #content p{
-    font-weight: thin;
+    /* font-weight: thin; */
     letter-spacing: -1px;
     line-height: 19px;
     font-size: 17px;
